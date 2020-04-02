@@ -6,8 +6,8 @@ class Nav extends Component {
    
     return (
         <div>
-      <nav className="navbar navbar-expand-lg navbar-primary bg">
-  <a className="navbar-brand">OXIDANE</a>
+      <nav className="navbar navbar-expand-lg navbar-dark bg">
+  <div className="navbar-brand">OXIDANE</div>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
@@ -24,7 +24,7 @@ class Nav extends Component {
       </li>
     </ul>
     <span class="navbar-text">
-      Navbar text with an inline element
+    ACCOUNT NO:{this.props.account}
     </span>
   </div>
 </nav>
