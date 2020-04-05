@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import App from"../App"
+import Nav from "./nav";
 class Contact extends Component {
  
   render() {
    
     return (
       <div>
-        <App/>
+      <Nav/>
       <h1>Im Contact</h1>
       </div>
     );

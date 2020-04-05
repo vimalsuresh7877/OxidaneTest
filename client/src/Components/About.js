@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import App from "../App";
+import Nav from "./nav";
 class About extends Component {
  
   render() {
    
     return (
         <div>
-        <App/>
+       <Nav/>
             
       <h1>Im About</h1>
       

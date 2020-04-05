@@ -1,16 +1,24 @@
 import React, { Component } from "react";
 import "./home.css";
-import App from "../App";
+import Nav from "./nav";
+import {Redirect,Link} from "react-router-dom";
 class Home extends Component {
  
+  onSubmit = event =>{
+    event.preventDefault();
+    return <Redirect to="/welcome"/>
+  }
   render() {
    
     return (
         <div className="home">
-       <App/>
+  <Nav/>
     <div className="buttons">
-    <button type="button" class="btn btn-outline-light">LOGIN</button><br/>
-    <button type="button" class="btn btn-outline-light">SIGN UP</button>
+    <Link to="/App">
+      <button type="button">
+        login
+      </button>
+    </Link>
     </div>
     </div>
     );
